@@ -1,4 +1,4 @@
-src/dma.o: ../src/dma.c ../src/dma.h \
+src/dma.o: ../src/dma.c C:/Users/Agata/workspace/F7_ADC/inc/dma.h \
  C:/Users/Agata/workspace/F7_ADC/CMSIS/device/stm32f746xx.h \
  C:/Users/Agata/workspace/F7_ADC/CMSIS/core/core_cm7.h \
  C:/Users/Agata/workspace/F7_ADC/CMSIS/core/core_cmInstr.h \
@@ -71,9 +71,11 @@ src/dma.o: ../src/dma.c ../src/dma.h \
  C:/Users/Agata/workspace/F7_ADC/HAL_Driver/Inc/stm32f7xx_ll_usb.h \
  C:/Users/Agata/workspace/F7_ADC/HAL_Driver/Inc/stm32f7xx_hal_pcd_ex.h \
  C:/Users/Agata/workspace/F7_ADC/HAL_Driver/Inc/stm32f7xx_hal_hcd.h \
- ../src/uart.h
+ C:/Users/Agata/workspace/F7_ADC/inc/uart.h \
+ C:/Users/Agata/workspace/F7_ADC/inc/dma.h \
+ C:/Users/Agata/workspace/F7_ADC/inc/adc.h
 
-../src/dma.h:
+C:/Users/Agata/workspace/F7_ADC/inc/dma.h:
 
 C:/Users/Agata/workspace/F7_ADC/CMSIS/device/stm32f746xx.h:
 
@@ -219,4 +221,8 @@ C:/Users/Agata/workspace/F7_ADC/HAL_Driver/Inc/stm32f7xx_hal_pcd_ex.h:
 
 C:/Users/Agata/workspace/F7_ADC/HAL_Driver/Inc/stm32f7xx_hal_hcd.h:
 
-../src/uart.h:
+C:/Users/Agata/workspace/F7_ADC/inc/uart.h:
+
+C:/Users/Agata/workspace/F7_ADC/inc/dma.h:
+
+C:/Users/Agata/workspace/F7_ADC/inc/adc.h:

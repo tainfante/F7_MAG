@@ -12,9 +12,14 @@
 #include "stm32f746xx.h"
 #include "stm32f7xx_hal.h"
 #include "uart.h"
+#include "adc.h"
+
+uint8_t dma_transfer_complete;
+DMA_HandleTypeDef uart_dma;
 
 void Dma_Config(void);
-void StartADC_DMA(void);
-void sendADCdata();
+void sendADCdata(void);
+void DMA2_Stream0_IRQHandler(void);
+
 
 #endif /* DMA_H_ */

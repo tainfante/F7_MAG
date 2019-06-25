@@ -15,5 +15,6 @@
 static void SystemClock_Config(void);
 void Initialize(void);
 void Error_Handler(void);
+static void CPU_CACHE_Enable(void);
 
 #endif /* INIT_H_ */

@@ -10,7 +10,7 @@
 void Initialize(void){
 
 	SystemClock_Config();
-
+	HAL_NVIC_SetPriorityGrouping(NVIC_PRIORITYGROUP_4);
 }
 
 void Error_Handler(void)
@@ -25,6 +25,8 @@ static void SystemClock_Config(void)
 {
   RCC_ClkInitTypeDef RCC_ClkInitStruct;
   RCC_OscInitTypeDef RCC_OscInitStruct;
+
+  __HAL_RCC_PWR_CLK_ENABLE();
 
   /* Enable HSE Oscillator and activate PLL with HSE as source */
   RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE;
@@ -60,3 +62,4 @@ static void SystemClock_Config(void)
     Error_Handler();
   }
 }
+

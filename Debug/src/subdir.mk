@@ -4,30 +4,39 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
+../src/adc.c \
 ../src/dma.c \
+../src/i2c.c \
 ../src/init.c \
 ../src/main.c \
 ../src/stm32f7xx_it.c \
 ../src/syscalls.c \
 ../src/system_stm32f7xx.c \
+../src/tim.c \
 ../src/uart.c 
 
 OBJS += \
+./src/adc.o \
 ./src/dma.o \
+./src/i2c.o \
 ./src/init.o \
 ./src/main.o \
 ./src/stm32f7xx_it.o \
 ./src/syscalls.o \
 ./src/system_stm32f7xx.o \
+./src/tim.o \
 ./src/uart.o 
 
 C_DEPS += \
+./src/adc.d \
 ./src/dma.d \
+./src/i2c.d \
 ./src/init.d \
 ./src/main.d \
 ./src/stm32f7xx_it.d \
 ./src/syscalls.d \
 ./src/system_stm32f7xx.d \
+./src/tim.d \
 ./src/uart.d 
 
 
